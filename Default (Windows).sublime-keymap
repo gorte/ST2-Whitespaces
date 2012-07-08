@@ -1,0 +1,14 @@
+[
+    {
+        "keys": ["ctrl+alt+w"],
+        "command": "ws_toggle_whitespaces"
+    },
+    {
+        "keys": ["ctrl+alt+space"],
+        "command": "ws_toggle_spaces"
+    },
+    {
+        "keys": ["ctrl+alt+end"],
+        "command": "ws_toggle_line_endings"
+    }
+]

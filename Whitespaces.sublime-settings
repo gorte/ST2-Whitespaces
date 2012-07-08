@@ -1,0 +1,33 @@
+{
+    // Max file size to search
+    "max_file_size": 1048576,
+
+    // Spaces color is determined by scope (default, "invalid")
+    //"space_highlight_scope_name": "Whitespaces.space.highlight",
+
+    // Tabs color is determined by scope (default, "invalid")
+    //"tab_highlight_scope_name": "Whitespaces.tab.highlight",
+
+    // Line endings color is determined by scope (default, "invalid")
+    //"line_ending_highlight_scope_name": "Whitespaces.line_ending.highlight",
+
+    // Show whitespaces on the minimap (default, true)
+    //"show_whitespaces_on_minimap": false,
+
+    // Highlight line endings type (default, true)
+    //"highlight_line_endings": false,
+
+    // Show line endings type in the status bar (default, true)
+    //"show_line_endings_in_status_bar": false,
+
+    // Show line endings icon in the gutter (default, true)
+    //"show_line_endings_in_gutter": false,
+
+    // Path to gutter icons (relative to Packages)
+    "icon_path" : "Whitespaces/icons",
+
+    // Icon? (crlf|cr|lf)
+    "crlf_icon" : "crlf",
+    "cr_icon" : "cr",
+    "lf_icon" : "lf"
+}
