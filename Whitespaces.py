@@ -3,7 +3,7 @@ import sublime, sublime_plugin
 
 WS_DEFAULT_MAX_FILE_SIZE = 1048576
 WS_DEFAULT_HIGHLIGHT_SCOPE_NAME = 'invalid'
-WS_SHOW_WHITESPACES_ON_MINIMAP = True
+WS_DEFAULT_SHOW_WHITESPACES_ON_MINIMAP = True
 WS_DEFAULT_HIGHLIGHT_LINE_ENDINGS = True
 WS_DEFAULT_SHOW_LINE_ENDINGS_IN_STATUS_BAR = True
 WS_DEFAULT_SHOW_LINE_ENDINGS_IN_GUTTER = True
@@ -16,7 +16,7 @@ def ws_toggle_spaces(view, pattern, region_key, highlight_scope_name):
     if len(old_highlight):
         view.erase_regions(region_key)
     else:
-        show_whitespaces_on_minimap = ws_settings.get('show_whitespaces_on_minimap', WS_SHOW_WHITESPACES_ON_MINIMAP)
+        show_whitespaces_on_minimap = ws_settings.get('show_whitespaces_on_minimap', WS_DEFAULT_SHOW_WHITESPACES_ON_MINIMAP)
         regions = view.find_all(pattern)
         view.add_regions(region_key, regions, highlight_scope_name, sublime.DRAW_EMPTY | 0 if show_whitespaces_on_minimap else sublime.HIDE_ON_MINIMAP)
 
